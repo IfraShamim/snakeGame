@@ -1,0 +1,79 @@
+* {
+    font-family: "Space Mono", monospace;
+    font-weight: bold !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #2c2c2c, #1a1a1a); /* Dark gradient background */
+    color: #fff; /* White text color for contrast */
+}
+
+h1 {
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 48px; /* Large font size */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+}
+
+canvas {
+    border-radius: 10px; /* Rounded corners */
+    width: 100%; /* Make canvas responsive */
+    max-width: 400px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px dashed #fff;
+    background-color: #302f2f; /* Dark background for the canvas */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Strong shadow for depth */
+}
+
+button {
+    margin: 5px;
+    padding: 12px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #252424;
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: rgb(159, 55, 55); /* Darker blue on hover */
+    color: #fff;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Add shadow effect on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Shrink button on click */
+    box-shadow: none; /* Remove shadow on click */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px; /* Smaller heading on small screens */
+    }
+
+    button {
+        font-size: 18px; /* Smaller buttons on small screens */
+        padding: 10px 15px; /* Adjust padding */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+    h1 {
+        font-size: 42px; /* Medium heading size */
+    }
+
+    button {
+        font-size: 20px; /* Medium button size */
+    }
+}

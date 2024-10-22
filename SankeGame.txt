@@ -1,0 +1,23 @@
+// Canva 
+HTML mein `<canvas>` tag graphics ko render karne ke liye use hota hai, jaise images, charts, aur animations. "Canvas" ka matlab ek aisa area hai jahan pe aap drawing ya graphics ko display kar sakte hain.
+
+//getContext()
+`getContext()` function ka kaam hai `<canvas>` tag ke andar graphics ko draw karne ke liye rendering context ko access karna, jaise "2D" ya "3D" context.
+
+//addEventListener
+`addEventListener()` function ka kaam hai kisi HTML element par specific event (jaise click, keypress) ko detect karna aur us event ke hone par ek function ko execute karna.
+
+//fillStyle()
+`fillStyle()` ka kaam hai `<canvas>` par draw ki gayi shapes ya graphics ke liye fill color set karna.
+
+//fillRect()
+`fillRect()` ka kaam hai `<canvas>` par ek filled rectangle draw karna, jisme aap position aur size define karte hain.
+Ismein 4 parameters snake ke rectangle ki position (x, y) aur size (width, height) ko define karne ke liye use hote hain, jisse rectangle ka sahi location aur dimension set kiya jata hai.
+
+//strokeStyle()
+`strokeStyle()` ka kaam hai `<canvas>` par draw ki gayi shapes ke outlines ka color set karna.
+
+//strokeRect()
+`strokeRect()` ka kaam hai `<canvas>` par ek rectangle ka outline draw karna, jisme position aur size specify kiye jate hain.
+Note:
+`strokeStyle()` dena zaroori hai kyunki yeh outline ka color set karta hai; agar aap `strokeRect()` ka use karte hain bina `strokeStyle()` set kiye, to default color (usually black) use hota hai, jo aapki design ke liye suitable nahi ho sakta.
